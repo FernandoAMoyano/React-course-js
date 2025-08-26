@@ -1,5 +1,8 @@
-import { heroes } from "./data/heroes";
-console.log( heroes );
+//import { heroes } from "./data/heroes";
+//import heroes, {owners} from "./data/heroes";
+import { heroes,  owners } from "./data/heroes";
+console.log( heroes, owners );
+
 
 const getHeroeById1 = ( id ) => {
   return heroes.find( ( heroe ) => {
