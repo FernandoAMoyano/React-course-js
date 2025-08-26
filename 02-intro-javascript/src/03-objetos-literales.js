@@ -10,7 +10,7 @@ const persona = {
   },
 };
 //console.table(persona);
-console.log(persona);
+console.log( persona );
 
 //Se copia la referencia al objeto
 //const persona2 = persona;
@@ -20,4 +20,4 @@ const persona2 = { ...persona };
 
 //modifica tambien el nombre en el objeto original
 persona2.nombre = "Peter";
-console.log(persona2);
+console.log( persona2 );

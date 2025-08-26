@@ -16,23 +16,23 @@ console.log(edad);
 console.log(clave); */
 
 //desestructuracion
-const retornaPersona = (usuario) => {
+const retornaPersona = ( usuario ) => {
   const { nombre, edad, clave } = usuario;
-  console.log(edad, clave, nombre);
+  console.log( edad, clave, nombre );
 };
 
 //desestructuracion en parametros
-const retornaPersona1 = ({ nombre, edad, clave }) => {
-  console.log(edad, clave, nombre);
+const retornaPersona1 = ( { nombre, edad, clave } ) => {
+  console.log( edad, clave, nombre );
 };
 
 //desestructuracion en parametros con valores por defecto
-const retornaPersona2 = ({ nombre, edad, rango = "capitan" }) => {
-  console.log(nombre, edad, rango);
+const retornaPersona2 = ( { nombre, edad, rango = "capitan" } ) => {
+  console.log( nombre, edad, rango );
 };
 
 //simulacion básica del hook useContext
-const usarContexto = ({ clave, edad }) => {
+const usarContexto = ( { clave, edad } ) => {
   return {
     nombreClave: clave,
     anios: edad,
@@ -43,16 +43,16 @@ const usarContexto = ({ clave, edad }) => {
   };
 };
 
-retornaPersona(persona);
-retornaPersona1(persona);
-retornaPersona2(persona);
+retornaPersona( persona );
+retornaPersona1( persona );
+retornaPersona2( persona );
 
-const avenger = usarContexto(persona); //useContext
-console.log(avenger);
+const avenger = usarContexto( persona ); //useContext
+console.log( avenger );
 
 const {
   nombreClave,
   nombre,
   latlng: { lat, lng },
-} = usarContexto(persona); //useContext
-console.log(nombreClave, nombre, lat, lng);
+} = usarContexto( persona ); //useContext
+console.log( nombreClave, nombre, lat, lng );

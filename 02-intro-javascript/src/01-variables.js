@@ -6,14 +6,14 @@ const apellido = "Moyano";
 let valorDado = 5;
 valorDado = 8;
 
-console.log(nombre, apellido, valorDado);
+console.log( nombre, apellido, valorDado );
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-let condicion = true;
+const condicion = true;
 
-if (condicion) {
-  let valorDado = 11;
-  console.log(valorDado);
+if ( condicion ) {
+  const valorDado = 11;
+  console.log( valorDado );
 }
-console.log(valorDado);
+console.log( valorDado );

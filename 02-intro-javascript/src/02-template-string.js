@@ -5,12 +5,12 @@ const apellido1 = "Moyano";
 
 //const nombreCompleto = nombre1 + " " + apellido1;
 const nombreCompleto = `${nombre1} ${apellido1}`;
-console.log(nombreCompleto);
+console.log( nombreCompleto );
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-function getSaludo(nombre) {
+function getSaludo ( nombre ) {
   return `Hola ${nombre}`;
 }
 
-console.log(`Este es un texto: ${getSaludo(nombre1)}`);
+console.log( `Este es un texto: ${getSaludo( nombre1 )}` );

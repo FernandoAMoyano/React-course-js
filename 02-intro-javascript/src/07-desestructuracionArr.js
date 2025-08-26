@@ -27,5 +27,5 @@ const usarEstado = ( valor ) => {
 const arr = usarEstado( "Goku" );
 console.log( arr );
 
-const [ nombre, setNombre ] = usarEstado( "Goku" )
+const [ nombre, setNombre ] = usarEstado( "Goku" );
 console.log( nombre, setNombre );

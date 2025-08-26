@@ -1,28 +1,28 @@
 /*---------------------- Funcion declarada --------------------- */
 
-function saludar1(nombre) {
+function saludar1 ( nombre ) {
   return "Hola" + nombre;
 }
 
 /* Funcion expresada */
-const saludar2 = function (nombre) {
+const saludar2 = function ( nombre ) {
   return "Hola" + nombre;
 };
 
 /*----------------------- Funcion flecha ------------------------- */
 
-const saludar3 = (nombre) => {
+const saludar3 = ( nombre ) => {
   return "Hola" + nombre;
 };
 
 /* -------------------Funcion flecha simplificada --------------- */
 
-const saludar4 = (nombre) => "Hola" + nombre;
+const saludar4 = ( nombre ) => "Hola" + nombre;
 
-console.log(saludar1());
-console.log(saludar2());
-console.log(saludar3());
-console.log(saludar4());
+console.log( saludar1() );
+console.log( saludar2() );
+console.log( saludar3() );
+console.log( saludar4() );
 
 /* ------------------- retornando un objeto 1 ----------------- */
 
@@ -35,10 +35,10 @@ const getUser = () => {
 
 /* ----------------------retornando un objeto 2------------------------- */
 
-const getUser1 = () => ({
+const getUser1 = () => ( {
   uid: "ABSDF",
   username: "Fernando21",
-});
+} );
 
-console.log(getUser());
-console.log(getUser1());
+console.log( getUser() );
+console.log( getUser1() );
