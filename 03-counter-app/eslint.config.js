@@ -22,6 +22,7 @@ export default [
     },
 
     plugins: {
+      React,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
     },
@@ -60,7 +61,7 @@ export default [
       "curly": [ "error", "all" ],
 
       // ========== REGLAS DE CÓDIGO ESTÁNDAR ==========
-      "no-unused-vars": [ "error", {
+         "no-unused-vars": [ "error", {
         "varsIgnorePattern": "^_",
         "argsIgnorePattern": "^_",
       } ],
