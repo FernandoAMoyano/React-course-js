@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import globals from "globals";
+import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
@@ -7,7 +8,6 @@ export default [
   {
     ignores: [ "dist/**/*", "node_modules/**/*" ],
   },
-
   {
     files: [ "**/*.{js,jsx}" ],
 
@@ -22,17 +22,17 @@ export default [
     },
 
     plugins: {
-      React,
+      react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
     },
 
     rules: {
-      // Configuraciones base
+      // === Configuraciones base ===
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
 
-      // ========== ESPACIADO CRÍTICO ==========
+      // === Espaciado crítico ===
       "array-bracket-spacing": [ "error", "always" ],
       "space-in-parens": [ "error", "always" ],
       "object-curly-spacing": [ "error", "always" ],
@@ -47,7 +47,7 @@ export default [
       "space-before-function-paren": [ "error", "always" ],
       "space-before-blocks": [ "error", "always" ],
 
-      // ========== PUNTUACIÓN Y SINTAXIS ==========
+      // === Puntuación y sintaxis ===
       "semi": [ "error", "always" ],
       "quotes": [ "error", "double" ],
       "comma-dangle": [ "error", "always-multiline" ],
@@ -56,12 +56,12 @@ export default [
       "no-trailing-spaces": "error",
       "no-multiple-empty-lines": [ "error", { "max": 2, "maxEOF": 1 } ],
 
-      // ========== LLAVES Y CORCHETES ==========
+      // === Llaves y corchetes ===
       "brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
       "curly": [ "error", "all" ],
 
-      // ========== REGLAS DE CÓDIGO ESTÁNDAR ==========
-         "no-unused-vars": [ "error", {
+      // === Reglas de código estándar ===
+      "no-unused-vars": [ "error", {
         "varsIgnorePattern": "^_",
         "argsIgnorePattern": "^_",
       } ],
@@ -69,7 +69,17 @@ export default [
       "prefer-const": "error",
       "no-var": "error",
 
-      // ========== REACT ==========
+      // === React ===
+      "react/jsx-curly-spacing": [
+        "error",
+        {
+          "when": "always",
+          "children": true,
+          "spacing": {
+            "objectLiterals": "always",
+          },
+        },
+      ],
       "react-refresh/only-export-components": [
         "warn",
         { "allowConstantExport": true },
