@@ -31,6 +31,10 @@ export default [
       // === Configuraciones base ===
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
+      // Mantienes tus reglas personalizadas
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
+      "react/jsx-uses-vars": "error",
 
       // === Espaciado crítico ===
       "array-bracket-spacing": [ "error", "always" ],
