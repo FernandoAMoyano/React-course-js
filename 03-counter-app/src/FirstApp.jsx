@@ -1,6 +1,5 @@
-/* eslint-disable react/jsx-curly-spacing */
+import PropTypes from "prop-types";
 
-/* eslint-disable space-in-parens */
 //const newMessage = "Fernando";
 
 /* const newMessage = {
@@ -25,6 +24,11 @@ export const FirstApp = ({ title, subtitle }) => {
       <p>Soy un subtitulo</p>
     </>
   );
+};
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.number,
 };
 
 export default FirstApp;
