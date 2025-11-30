@@ -3,6 +3,7 @@ import { StrictMode } from "react";
 import { App } from "./App";
 import FirstApp from "./FirstApp";
 import "./index.css";
+import PropTypes from "prop-types";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
